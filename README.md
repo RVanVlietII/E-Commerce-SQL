@@ -38,7 +38,7 @@ This is a back-end deployment of a practice E-Commerce Store ran with mysql, exp
 
 ## Video Walkthough
 
-`https://drive.google.com/file/d/1e3Ga3obfsY86RtD3JD18OyjnQWbxXsku/view`
+`https://drive.google.com/file/d/1b94D4JaTt7NqOGoVMRr3Welidxq-hfje/view`
 
 
 ## Credit
