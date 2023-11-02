@@ -13,10 +13,11 @@ This is a back-end deployment of a practice E-Commerce Store ran with mysql, exp
 
 ## How to Run
 1) In CLI, use `mysql -u root -p` to login to mySQL
-2) Use `source ./db/schema.sql;` to use database e-commerce
-3) Use `npm run seed` to seed data
-4) Use `npm start` to start the local application
-5) Use insomnia or similar application to connect to local url and use routes as listed to explore or add/delete/update to the store. 
+2) Create your ``.env file` to store your mySQL db ('ecommerce_db'), username and password for access upon connecting to server.
+3) Use `source ./db/schema.sql;` to use database e-commerce
+4) Use `npm run seed` to seed data
+5) Use `npm start` to start the local application
+6) Use insomnia or similar application to connect to local url and use routes as listed to explore or add/delete/update to the store. 
 
 ## Routes
 
