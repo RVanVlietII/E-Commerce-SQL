@@ -40,29 +40,11 @@ router.post('/', async (req, res) => {
   // create a new tag
   try {
     const { product_id, tag_name } = req.body;
-    // const product = await Product.finkByPk(product_id);
-    // if (!product) {
-    //   return res.status(404).json({ message: 'Product Not Found'});
-    // }
-    // let tag = await Tag.findOne({
-    //   where: { tag_name },
-    // })
-    
-    // if (!tag) {
-    //   tag = await Tag.create({ tag_name });
-    // }
-
-    // await ProductTag.create({
-    //   product_id: product.id,
-    //   tag_id: tag.id,
-    // })
     const newTag = await Tag.create({ tag_name });
 
     if (product_id) {
       await ProductTag.create({ product_id, tag_id: newTag.id });
     }
-    
-    // const newTag = await Tag.create(req.body);
     res.status(201).json(newTag);
   } catch (err) {
     console.log(err);
